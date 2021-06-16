@@ -1,0 +1,116 @@
+
+*{
+   padding: 0;
+   margin: 0;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    overflow-x: hidden;
+    position: relative;
+}
+.clouds
+{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 100px;
+    width: 500%;
+    background-image: url(5.png);
+    background-size: 150px;
+    background-repeat: repeat-x;
+    animation: clouds 22s linear infinite;
+}
+@keyframes clouds{
+    100%{
+        transform: translateX(2000px);
+    }
+}
+.hills{
+    position: absolute;
+    height: 115px;
+    width: 700%;
+    left: 10px;
+    bottom: 0px;
+    background-image: url(hills3.png);
+    background-size: 240px;
+    background-repeat: repeat-x;
+    animation: hills 18s linear infinite;
+}
+@keyframes hills{
+    100%{
+        transform: translateX(-1300px);
+    }
+}
+.aeroplan img{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 340px;
+    animation: aeroplan 4s infinite linear;
+    z-index: 1;
+}
+@keyframes aeroplan
+{
+    100%{
+        transform: translateY(-1px);
+     }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+ 
+    }
+}
+.flame
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 6px;
+    width: 44px;
+    top: 53%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+    animation: flame 0.09s infinite linear;
+}
+@keyframes flame{
+    100%{
+        transform: translateX(100%);
+        transform: rotate(3deg);
+
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    0%{
+        transform: translateX(0%);
+    }
+}
+.flames
+{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 6px;
+    width: 48px;
+    top: 48%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    animation: flames 0.09s infinite linear;
+}
+@keyframes flames{
+    100%{
+        transform: translateX(100%);
+        transform: rotate(3deg);
+
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    0%{
+        transform: translateX(0%);
+    }
+}
